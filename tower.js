@@ -7,8 +7,12 @@ function startUp(){
     canvas = document.getElementById('tower-defense');
     ctx = canvas.getContext('2d');
     ball= new Ball();
-    canvas.style.width = window.innerWidth;
-    canvas.style.height = `window.innerHeight`;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    console.log(canvas.height);
+    console.log(canvas.width);
+    console.log(window.innerHeight);
+    console.log(window.innerWidth);
     canvas.style.border = 'solid black 2px'
     canvas.style.backgroundColor = 'green'
 
@@ -22,15 +26,15 @@ function animate(){
 
 
 function Ball(){
-    this.x = Math.random()*window.innerWidth;
-    this.y = Math.random()*window.innerHeight;
-    this.dx = Math.random()*6-3;
-    this.dy = Math.random()*6-3;
-    this.rad = Math.random()*10+15;
+    this.x = Math.random()*window.innerWidth;// position on the x-axis
+    this.y = Math.random()*window.innerHeight;//position on the y-axis
+    this.dx = Math.random()*6-3;// change in acceleration
+    this.dy = Math.random()*6-3;// change in time
+    this.rad = Math.random()*10+15;// size of the circle
 
     this.update = function(){
-        this.x += this.dx;
-        this.y += this.dy;
+        this.x += this.dx;//updates position on x-axis in relation to accerlation
+        this.y += this.dy;// updates position on y-axis in relation to time
         this.render();
     }
 
