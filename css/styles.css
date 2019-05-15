@@ -1,5 +1,5 @@
 html,body{
-    background-color: yellowgreen;
+    background-color: blue;
     /* height:100%;
     overflow: hidden;
     margin: 0;
@@ -47,54 +47,7 @@ html,body{
     float: left;
 }
 
-/* #shipImgDiv0{
-    background-color: #DDD;
-    border:solid black 2px;
-    width:60px;
-    height:80px;
-    margin-top: 35px;
-    margin-left: 10px;
-    padding-top: 10px;
-    padding-left: 20PX;
-    border-radius: 5px;
-  }
-  
-  #shipImgDiv1{
-    background-color: #DDD;
-    border:solid black 2px;
-    width:60px;
-    height:80px;
-    margin-top: 55px;
-    margin-left: 10px;
-    padding-top: 10px;
-    padding-left: 20PX;
-    border-radius: 5px;
-  }
-  
-  #shipImgDiv2{
-    background-color: #DDD;
-    border:solid black 2px;
-    width:60px;
-    height:80px;
-    margin-top: 55px;
-    margin-left: 10px;
-    padding-top: 10px;
-    padding-left: 20PX;
-    border-radius: 5px;
-  }
-  
-  #shipImgDiv3{
-    background-color: #DDD;
-    border:solid black 2px;
-    width:60px;
-    height:80px;
-    margin-top: 55px;
-    margin-left: 10px;
-    padding-top: 10px;
-    padding-left: 20PX;
-    border-radius: 5px;
-  }
-   */
+
 .selectDisplay{
     background-color: #DDD;
     border: solid black 2px;

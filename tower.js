@@ -55,39 +55,39 @@ class Game {
 
     createTileDivs(){
         var tiles =[];
-        console.log('hello');
         for(var i=0; i<4;i++){
             var objects = document.createElement('div');
             var ships = "images/ship"+(i+1)+"s.png"// adds ship which are the towers into the array
-            // var projectile = "images/bullet"+(i+1)+".png"// adds bullets for respective ship into array
+            var projectile = "images/bullet.png"// adds bullets for respective ship into array
             
 
             objects.cnvShipImg = new Image();
             objects.cnvShipImg.addEventListener('load',this.hideImgElement,false);
             objects.cnvShipImg.addEventListener('error',function(){console.log(ships + "failed to load");},false);
             objects.cnvShipImg.src=ships;
+
             
             
-            // objects.cnvBulletImg = new Image();
-            // objects.cnvBulletImg.addEventListener('load',this.hideImgElement,false);
-            // objects.cnvBulletImg.addEventListener('error',function(){console.log(projectile + "failed to load");},false);
-            // objects.cnvBulletImg.src= projectile;
+            objects.cnvBulletImg = new Image();
+            objects.cnvBulletImg.addEventListener('load',this.hideImgElement,false);
+            objects.cnvBulletImg.addEventListener('error',function(){console.log(projectile + "failed to load");},false);
+            objects.cnvBulletImg.src= projectile;
             
+
             document.getElementById('tower-select').appendChild(objects);
             
+
             
-            console.log(objects);
-            console.log(objects.cnvShipImg);
             objects.cost = 100*1 +50;
             objects.id = "shipImgDiv"+i;
-            objects.cnvShipImg.id = "selectDisplay";
+            
             tiles.push(objects);
             var tileImagePath = "images/ship"+(i+1)+"s.png";
             var tileImg = new Image();
             tileImg.addEventListener('error',function(){console.log(tileImagePath + "failed to load");},false);
             tileImg.src = tileImagePath;
             objects.appendChild(tileImg);
-            
+            objects.children[0].className = "selectDisplay";            
         }
         return tiles;
     };
