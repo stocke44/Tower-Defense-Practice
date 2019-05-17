@@ -41,7 +41,7 @@ html,body{
     background-color: blueviolet;
     height: 750px;
     width: 900px;
-    background-image: url('/images/space.png');
+    background-image: url('../images/space.png');
     float: left;
 }
 
