@@ -50,9 +50,7 @@ class Game {
         for (let i = 0; i < this.towers.length; i++) {
           this.towers[i].run();
         }
-        for (let i = 0; i < this.enemies.length; i++) {
-          this.enemies[i].run();
-        }
+
         for (let i = 0; i < this.bullets.length; i++) {
     
           this.bullets[i].run();
